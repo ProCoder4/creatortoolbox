@@ -359,6 +359,37 @@
             document.getElementById('thumbnail-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
 
-        // GENERADOR DE DESCRIPCIONES
-        function generateDescription() {
-            const title = document.getElementById('desc-title').v
+    // GENERADOR DE DESCRIPCIONES
+function generateDescription() {
+    const title = document.getElementById('desc-title').value || 'Mi video';
+    const platform = document.getElementById('desc-platform').value;
+    const keywords = document.getElementById('desc-keywords').value || 'contenido, viral';
+    
+    const desc = `🎥 ${title}
+
+📌 TIMESTAMPS:
+0:00 Intro
+2:30 Parte principal
+5:00 Conclusiones
+
+🔥 SUSCRÍBETE para más contenido sobre ${keywords}
+
+#${keywords.split(',').join(' #')}`;
+
+    document.getElementById('description-result').innerHTML = `
+        <h4>Descripción para ${platform.toUpperCase()}:</h4>
+        <textarea style="width: 100%; height: 200px; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 10px; font-family: monospace;">${desc}</textarea>
+        <button class="copy-btn" style="margin-top: 1rem;" onclick="copyResult(document.querySelector('#description-result textarea').value)">Copiar</button>
+    `;
+    document.getElementById('description-result').style.display = 'block';
+    document.getElementById('description-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// SAVE DATA
+document.addEventListener('DOMContentLoaded', () => {
+    const saved = localStorage.getItem('expenses');
+    if (saved) document.getElementById('expenses').value = saved;
+    
+    document.getElementById('expenses')?.addEventListener('input', e => localStorage.setItem('expenses', e.target.value));
+});
+        
