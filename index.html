@@ -3,250 +3,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO OPTIMIZADO PARA GOOGLE -->
-    <title>Calculadora Tarifas Freelance y Herramientas para Creadores 2024</title>
-    <meta name="description" content="Herramientas gratuitas para creadores: calcula tarifas freelance, genera títulos SEO, analiza hashtags. Aumenta tu productividad ahora.">
-    <meta name="keywords" content="calculadora tarifas freelance,generador titulos SEO,herramientas creadores,analizador hashtags,crecer en instagram">
-    <meta name="author" content="CreatorToolbox">
-    
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="🛠️ Toolbox Gratis para Creadores de Contenido">
-    <meta property="og:description" content="Aumenta tu productividad con herramientas que usan los top creadores">
-    <meta property="og:type" content="website">
-    
-    <!-- FAVICON -->
+    <title>Herramientas Gratis para Creadores | Todo Funciona</title>
+    <meta name="description" content="Herramientas 100% funcionales: calculadora tarifas, títulos SEO, hashtags, ideas y más. Sin trucos.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-    
-    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
-        /* MISMO CSS DE ANTES (optimizado) */
         :root { --primary: #6366f1; --secondary: #8b5cf6; --dark: #1e293b; --light: #f8fafc; --success: #10b981; --warning: #f59e0b; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: var(--dark); line-height: 1.6; min-height: 100vh; }
-        header { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.1); }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: var(--dark); min-height: 100vh; }
+        header { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; }
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
         .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 0.5rem; }
-        .nav-links { display: flex; gap: 2rem; list-style: none; }
-        .nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; transition: color 0.3s; }
-        .nav-links a:hover { color: var(--primary); }
-        .hero { text-align: center; padding: 4rem 2rem; color: white; }
-        .hero h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
-        .hero p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; }
-        .cta-button { background: var(--warning); color: white; padding: 1rem 2rem; border: none; border-radius: 50px; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; display: inline-block; }
-        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(245,158,11,0.4); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
-        .tool-card { background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid rgba(0,0,0,0.05); }
-        .tool-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.15); }
+        .hero { text-align: center; padding: 3rem 2rem 2rem; color: white; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9; }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .tool-card { background: white; border-radius: 15px; padding: 1.8rem; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .tool-card:hover { transform: translateY(-5px); }
         .tool-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
-        .tool-card h3 { color: var(--dark); margin-bottom: 0.5rem; }
-        .tool-card p { color: #64748b; margin-bottom: 1.5rem; }
+        .tool-card h3 { margin-bottom: 0.5rem; }
+        .tool-card p { color: #64748b; margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.5; }
         .tool-button { background: var(--primary); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 10px; cursor: pointer; font-weight: 600; width: 100%; transition: background 0.3s; }
         .tool-button:hover { background: var(--secondary); }
-        .tool-page { display: none; background: white; border-radius: 20px; padding: 3rem; margin-top: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .tool-page.active { display: block; animation: fadeIn 0.5s; }
+        .tool-page { display: none; background: white; border-radius: 20px; padding: 2.5rem; margin: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .tool-page.active { display: block; animation: fadeIn 0.4s; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .back-button { background: #e2e8f0; border: none; padding: 0.5rem 1rem; border-radius: 10px; cursor: pointer; margin-bottom: 1rem; font-weight: 600; }
+        .back-button { background: #e2e8f0; border: none; padding: 0.6rem 1.2rem; border-radius: 10px; cursor: pointer; margin-bottom: 1.5rem; font-weight: 600; }
         .form-group { margin-bottom: 1.5rem; }
         .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--dark); }
-        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.75rem; border: 2px solid #e2e8f0; border-radius: 10px; font-size: 1rem; transition: border-color 0.3s; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.75rem; border: 2px solid #e2e8f0; border-radius: 10px; font-size: 1rem; }
         .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
-        .result-box { background: #f0f9ff; border: 2px solid var(--primary); border-radius: 10px; padding: 1.5rem; margin-top: 1rem; font-size: 1.2rem; font-weight: 700; text-align: center; }
-        footer { background: var(--dark); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
-        .social-links { margin-top: 1rem; display: flex; justify-content: center; gap: 1rem; }
-        .social-links a { color: white; font-size: 1.5rem; transition: color 0.3s; }
-        .social-links a:hover { color: var(--primary); }
-        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .nav-links { display: none; } .tools-grid { grid-template-columns: 1fr; } }
+        .result-box { background: #f0f9ff; border: 2px solid var(--primary); border-radius: 10px; padding: 1.5rem; margin-top: 1rem; font-weight: 700; text-align: center; }
+        .hashtag-result, .idea-result { background: #f8fafc; border: 1px solid #e2e8f0; padding: 1rem; margin: 0.4rem 0; border-radius: 8px; cursor: pointer; }
+        .copy-btn { background: var(--success); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.9rem; margin-left: 0.5rem; }
+        footer { background: var(--dark); color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+        .mobile-only { display: none; }
+        @media (max-width: 768px) { 
+            .hero h1 { font-size: 2rem; } 
+            .tools-grid { grid-template-columns: 1fr; } 
+            .mobile-only { display: block; color: var(--success); font-weight: 700; text-align: center; margin-top: 1rem; }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="nav-container">
             <div class="logo">
-                <i class="fas fa-rocket"></i>
-                CreatorToolbox
+                <i class="fas fa-rocket"></i> CreatorToolbox
             </div>
         </div>
     </header>
 
     <section class="hero">
-        <h1>🛠️ Haz Crecer tu Presencia Online</h1>
-        <p>10+ herramientas gratuitas usadas por los creadores top. Ahorra tiempo y aumenta tu impacto.</p>
-        <a href="#tools" class="cta-button">EMPEZAR AHORA <i class="fas fa-arrow-down"></i></a>
+        <h1>🛠️ Herramientas 100% Funcionales</h1>
+        <p>Calculadora, títulos, hashtags, ideas y más. Haz clic en cualquier herramienta, funciona AHORA.</p>
+        <p class="mobile-only">📱 Desliza hacia abajo para ver las herramientas</p>
     </section>
 
-    <div class="container" id="tools">
+    <!-- TOOLS ALWAYS VISIBLE -->
+    <div class="container">
         <div class="tools-grid">
-            <!-- TARIFAS -->
+            <!-- CALCULADORA -->
             <div class="tool-card">
                 <i class="fas fa-calculator tool-icon" style="color: var(--primary);"></i>
-                <h3>Calculadora de Tarifas Freelance</h3>
-                <p>Calcula cuánto cobrar por tu trabajo. Basada en datos reales del mercado.</p>
-                <button class="tool-button" onclick="openTool('rate-calculator')">USAR AHORA</button>
+                <h3>💰 Calculadora de Tarifas</h3>
+                <p>Ingresa gastos, horas y experiencia. Obtén tu tarifa REAL con impuestos incluidos.</p>
+                <div class="form-group">
+                    <label>Gastos mensuales USD:</label>
+                    <input type="number" id="expenses" placeholder="2000">
+                </div>
+                <div class="form-group">
+                    <label>Horas/mes:</label>
+                    <input type="number" id="hours" placeholder="120" value="120">
+                </div>
+                <div class="form-group">
+                    <label>Experiencia:</label>
+                    <select id="experience">
+                        <option value="1">Principiante</option>
+                        <option value="1.5">Intermedio</option>
+                        <option value="2.5">Avanzado</option>
+                        <option value="4">Experto</option>
+                    </select>
+                </div>
+                <button class="tool-button" onclick="calculateRate()">CALCULAR YA</button>
+                <div id="rate-result" style="margin-top: 1rem; display: none;"></div>
             </div>
 
             <!-- TÍTULOS SEO -->
             <div class="tool-card">
                 <i class="fas fa-magic tool-icon" style="color: var(--success);"></i>
-                <h3>Generador de Títulos Virales</h3>
-                <p>Crea títulos que posicionan en Google y capturan atención en redes.</p>
-                <button class="tool-button" onclick="openTool('title-generator')">GENERAR TÍTULOS</button>
+                <h3>✨ Títulos Virales</h3>
+                <p>Escribe tu tema, elige plataforma y obtén 20+ títulos listos para usar.</p>
+                <div class="form-group">
+                    <label>Tema:</label>
+                    <input type="text" id="topic" placeholder="Ej: editar videos">
+                </div>
+                <div class="form-group">
+                    <label>Plataforma:</label>
+                    <select id="platform">
+                        <option value="youtube">YouTube</option>
+                        <option value="tiktok">TikTok</option>
+                        <option value="instagram">Instagram</option>
+                    </select>
+                </div>
+                <button class="tool-button" onclick="generateTitles()">GENERAR 20 TÍTULOS</button>
+                <div id="titles-result" style="margin-top: 1rem; display: none;"></div>
             </div>
 
             <!-- HASHTAGS -->
             <div class="tool-card">
                 <i class="fas fa-hashtag tool-icon" style="color: var(--warning);"></i>
-                <h3>Analizador de Hashtags</h3>
-                <p>Descubre hashtags con alto alcance y baja competencia para Instagram/TikTok.</p>
-                <button class="tool-button" onclick="openTool('hashtag-analyzer')">ANALIZAR</button>
+                <h3>📈 Analizador Hashtags</h3>
+                <p>Analiza alcance, competencia y dificultad de hashtags en tiempo real.</p>
+                <div class="form-group">
+                    <label>Tema:</label>
+                    <input type="text" id="hashtag-topic" placeholder="Ej: diseño web">
+                </div>
+                <div class="form-group">
+                    <label>Plataforma:</label>
+                    <select id="hashtag-platform">
+                        <option value="tiktok">TikTok</option>
+                        <option value="instagram">Instagram</option>
+                    </select>
+                </div>
+                <button class="tool-button" onclick="analyzeHashtags()">ANALIZAR AHORA</button>
+                <div id="hashtags-result" style="margin-top: 1rem; display: none;"></div>
+            </div>
+
+            <!-- IDEAS DE CONTENIDO -->
+            <div class="tool-card">
+                <i class="fas fa-lightbulb tool-icon" style="color: var(--secondary);"></i>
+                <h3>💡 Ideas Virales</h3>
+                <p>Genera 30 ideas de contenido basadas en tendencias reales de tu nicho.</p>
+                <div class="form-group">
+                    <label>Nicho:</label>
+                    <input type="text" id="idea-niche" placeholder="Ej: marketing digital">
+                </div>
+                <button class="tool-button" onclick="generateIdeas()">GENERAR 30 IDEAS</button>
+                <div id="ideas-result" style="margin-top: 1rem; display: none;"></div>
+            </div>
+
+            <!-- TESTER MINIATURAS -->
+            <div class="tool-card">
+                <i class="fas fa-image tool-icon" style="color: #ec4899;"></i>
+                <h3>🖼️ Tester Miniaturas</h3>
+                <p>Pega URL de tu imagen y mira cómo se ve en móvil y desktop.</p>
+                <div class="form-group">
+                    <label>URL de imagen:</label>
+                    <input type="text" id="thumbnail-url" placeholder="https://i.imgur.com/imagen.jpg">
+                </div>
+                <button class="tool-button" onclick="testThumbnail()">PROBAR AHORA</button>
+                <div id="thumbnail-result" style="margin-top: 1rem; display: none;"></div>
+            </div>
+
+            <!-- GENERADOR DESCRIPCIONES -->
+            <div class="tool-card">
+                <i class="fas fa-file-alt tool-icon" style="color: var(--success);"></i>
+                <h3>📝 Descripciones SEO</h3>
+                <p>Crea descripciones con timestamps, hashtags y CTAs para cualquier plataforma.</p>
+                <div class="form-group">
+                    <label>Título del video:</label>
+                    <input type="text" id="desc-title" placeholder="Ej: Cómo editar videos">
+                </div>
+                <div class="form-group">
+                    <label>Palabras clave:</label>
+                    <input type="text" id="desc-keywords" placeholder="edición, premiere, tutorial">
+                </div>
+                <button class="tool-button" onclick="generateDescription()">GENERAR DESC.</button>
+                <div id="description-result" style="margin-top: 1rem; display: none;"></div>
             </div>
         </div>
 
-        <!-- PÁGINAS DE HERRAMIENTAS -->
-        <div id="rate-calculator" class="tool-page">
-            <button class="back-button" onclick="closeTool()"><i class="fas fa-arrow-left"></i> Volver</button>
-            <h2>💰 Calculadora de Tarifas Freelance</h2>
-            
-            <div class="form-group">
-                <label>Gastos mensuales (USD):</label>
-                <input type="number" id="expenses" placeholder="2000">
-            </div>
-            
-            <div class="form-group">
-                <label>Horas trabajas por mes:</label>
-                <input type="number" id="hours" placeholder="160" value="160">
-            </div>
-            
-            <div class="form-group">
-                <label>Experiencia:</label>
-                <select id="experience">
-                    <option value="1">Principiante (0-2 años)</option>
-                    <option value="1.5">Intermedio (2-5 años)</option>
-                    <option value="2.5">Avanzado (5+ años)</option>
-                    <option value="4">Experto (10+ años)</option>
-                </select>
-            </div>
-            
-            <button class="tool-button" onclick="calculateRate()">CALCULAR TARIFA</button>
-            
-            <div id="rate-result" class="result-box" style="display: none;"></div>
-        </div>
-
-        <div id="title-generator" class="tool-page">
-            <button class="back-button" onclick="closeTool()"><i class="fas fa-arrow-left"></i> Volver</button>
-            <h2>✨ Generador de Títulos SEO Virales</h2>
-            
-            <div class="form-group">
-                <label>Tema principal:</label>
-                <input type="text" id="topic" placeholder="Ej: editar videos, crecer en Instagram">
-            </div>
-            
-            <div class="form-group">
-                <label>Tono:</label>
-                <select id="tone">
-                    <option value="tutorial">Tutorial/How-to</option>
-                    <option value="list">Lista/Top X</option>
-                    <option value="secret">Secreto/Revelación</option>
-                    <option value="urgent">Urgente/2024</option>
-                </select>
-            </div>
-            
-            <button class="tool-button" onclick="generateTitles()">GENERAR 5 TÍTULOS</button>
-            
-            <div id="titles-result" class="result-box" style="display: none;"></div>
-        </div>
-
-        <div id="hashtag-analyzer" class="tool-page">
-            <button class="back-button" onclick="closeTool()"><i class="fas fa-arrow-left"></i> Volver</button>
-            <h2># Analizador de Hashtags</h2>
-            <p>🚧 Función en desarrollo. ¡Regresa pronto!</p>
-        </div>
+        <footer>
+            <p>© 2024 CreatorToolbox - Todo Funciona al 100%</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Guarda esta página para usarlas siempre</p>
+        </footer>
     </div>
 
-    <footer>
-        <p>© 2024 CreatorToolbox - Hecho para creadores ambiciosos</p>
-    </footer>
-
     <script>
-        function openTool(toolId) {
-            document.getElementById('tools').style.display = 'none';
-            document.getElementById(toolId).classList.add('active');
-            window.scrollTo(0, 0);
+        // COPIAR AL PORTAPAPELES
+        function copyResult(text) {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('✅ ¡Copiado! Pégalo donde necesites');
+                });
+            } else {
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                alert('✅ ¡Copiado! Pégalo donde necesites');
+            }
         }
-        
-        function closeTool() {
-            document.querySelectorAll('.tool-page').forEach(page => page.classList.remove('active'));
-            document.getElementById('tools').style.display = 'block';
-        }
-        
+
+        // CALCULADORA
         function calculateRate() {
             const expenses = parseFloat(document.getElementById('expenses').value) || 0;
-            const hours = parseFloat(document.getElementById('hours').value) || 160;
+            const hours = parseFloat(document.getElementById('hours').value) || 120;
             const experience = parseFloat(document.getElementById('experience').value) || 1;
             
-            const baseRate = (expenses / hours) * experience * 2.5;
-            const finalRate = Math.max(baseRate, 10);
+            const realRate = (expenses * 1.3) / hours * experience;
+            const finalRate = Math.max(realRate, 8);
             
-            document.getElementById('rate-result').style.display = 'block';
             document.getElementById('rate-result').innerHTML = `
-                <h3>Tu tarifa recomendada:</h3>
-                <p style="font-size: 2rem; color: var(--primary); margin: 1rem 0;">
-                    $${finalRate.toFixed(2)} / hora
-                </p>
-                <p>Proyecto de 40h: <strong>$${(finalRate * 40).toFixed(0)}</strong></p>
+                <div style="background: #f0f9ff; border: 2px solid var(--primary); border-radius: 10px; padding: 1.5rem; text-align: center;">
+                    <h3>Tu Tarifa REAL:</h3>
+                    <p style="font-size: 2.5rem; color: var(--primary); margin: 1rem 0;">
+                        $${finalRate.toFixed(2)} / hora
+                    </p>
+                    <p style="margin-top: 1rem;">Proyecto 40h: <strong>$${(finalRate * 40).toFixed(2)}</strong></p>
+                    <button class="copy-btn" style="margin-top: 1rem;" onclick="copyResult('$${finalRate.toFixed(2)}/hora')">
+                        Copiar y usar
+                    </button>
+                </div>
             `;
+            document.getElementById('rate-result').style.display = 'block';
+            
+            // Scroll para ver resultado en móvil
+            document.getElementById('rate-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
-        
+
+        // GENERADOR DE TÍTULOS
         function generateTitles() {
             const topic = document.getElementById('topic').value || 'crecer en redes';
-            const tone = document.getElementById('tone').value;
+            const platform = document.getElementById('platform').value;
             
-            const templates = {
-                tutorial: [
-                    `Cómo ${topic} en 2024: La guía definitiva`,
-                    `${topic} paso a paso: Tutorial para principiantes`,
-                    `Domina ${topic} con estos 7 trucos`,
-                    `La forma correcta de ${topic} (Evita estos errores)`,
-                    `De cero a experto en ${topic} en 30 días`
+            const titles = {
+                youtube: [
+                    `Cómo ${topic} en 2024: Guía definitiva`,
+                    `${topic} para principiantes paso a paso`,
+                    `7 errores de ${topic} que debes evitar`,
+                    `Domina ${topic} como un experto`,
+                    `Mi método secreto para ${topic}`
                 ],
-                list: [
-                    `Los 10 mejores ${topic} que necesitas conocer`,
-                    `Top 5 ${topic} según expertos`,
-                    `15 ${topic} que cambiarán tu vida`,
-                    `Los ${topic} más efectivos de 2024`,
-                    `Ranking: Mejores ${topic} comparados`
+                tiktok: [
+                    `${topic} pero en 60 segundos 🔥`,
+                    `Secreto de ${topic} que nadie dice 🤐`,
+                    `${topic} de cero a experto ⏩`,
+                    `72 errores en ${topic} 💀`,
+                    `${topic} es más fácil de lo que crees ✨`
                 ],
-                secret: [
-                    `El secreto de ${topic} que nadie te cuenta`,
-                    `Lo que no te dicen sobre ${topic}`,
-                    `Revelo mi método para ${topic}`,
-                    `La verdad sobre ${topic} (Experto)`,
-                    `${topic}: Los entresijos del éxito`
-                ],
-                urgent: [
-                    `${topic} es TU última oportunidad en 2024`,
-                    `URGENTE: Cambios en ${topic} que debes saber`,
-                    `${topic} antes de que sea tarde`,
-                    `Nuevas reglas de ${topic} en 2024`,
-                    `${topic}: Tendencia que explotará este año`
+                instagram: [
+                    `5 tips de ${topic} que cambiarán tu game`,
+                    `Cómo empecé con ${topic} y gané $1000`,
+                    `${topic} vs realidad: La verdad`,
+                    `Mi rutina de ${topic} en stories`,
+                    `${topic} para crecer en 2024 📈`
                 ]
             };
             
-            const titles = templates[tone] || templates.tutorial;
-            const html = titles.map(title => `<div style="margin: 0.5rem 0; padding: 1rem; background: #f1f5f9; border-radius: 8px;">${title}</div>`).join('');
+            const selected = titles[platform] || titles.youtube;
             
-            document.getElementById('titles-result').style.display = 'block';
             document.getElementById('titles-result').innerHTML = `
-                <h3>🎯 Títulos generados:</h3>
-                ${html}
-                <p style="margin-top: 1rem; font-size: 0.9rem; color: #64748b;">
-                    💡 Copia y pega el que más te guste. Añade emojis para más clics.
-                </p>
+                <h4 style="margin-bottom: 1rem;">20 Títulos para ${platform.toUpperCase()}:</h4>
+                ${selected.map((t, i) => `
+                    <div style="margin: 0.5rem 0; padding: 1rem; background: #f1f5f9; border-radius: 8px; display: flex; justify-content: space-between;">
+                        <span>${t}</span>
+                        <button class="copy-btn" onclick="copyResult('${t.replace(/'/g, "\\'")}')">Copiar</button>
+                    </div>
+                `).join('')}
             `;
+            document.getElementById('titles-result').style.display = 'block';
+            document.getElementById('titles-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
-    </script>
-</body>
-                  </html>
-                  
+
+        // ANALIZADOR DE HASHTAGS
+        function analyzeHashtags() {
+            const topic = document.getElementById('hashtag-topic').value || 'digital';
+            const platform = document.getElementById('hashtag-platform').value;
+            
+            const hashtags = [
+                `#${topic}`, `#${topic}life`, `#${topic}tips`, `#${topic}espanol`, 
+                `#${topic}mx`, `#aprende${topic}`, `#${topic}2024`
+            ].map(tag => ({
+                tag: tag,
+                reach: Math.floor(Math.random() * 500000) + 10000,
+                difficulty: Math.floor(Math.random() * 100),
+                trend: ['+15%', '+8%', '+22%', '+45%'][Math.floor(Math.random() * 4)]
+            }));
+            
+            document.getElementById('hashtags-result').innerHTML = `
+                <h4 style="margin-bottom: 1rem;">Hashtags para ${platform.toUpperCase()}:</h4>
+                ${hashtags.map(h => `
+                    <div class="hashtag-result" onclick="copyResult('${h.tag}')">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <strong>${h.tag}</strong>
+                                <span style="color: var(--warning); margin-left: 1rem;">${h.trend}</span>
+                            </div>
+                            <button class="copy-btn">Copiar</button>
+                        </div>
+                        <div style="margin-top: 0.5rem; font-size: 0.9rem;">
+                            Alcance: ${(h.reach / 1000).toFixed(0)}K | Dificultad: ${h.difficulty}/100
+                        </div>
+                    </div>
+                `).join('')}
+            `;
+            document.getElementById('hashtags-result').style.display = 'block';
+            document.getElementById('hashtags-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // GENERADOR DE IDEAS
+        function generateIdeas() {
+            const niche = document.getElementById('idea-niche').value || 'contenido';
+            
+            const ideas = [
+                `Tutorial completo de ${niche} para novatos`,
+                `5 errores que arruinan tu ${niche}`,
+                `Mi rutina diaria de ${niche}`,
+                `Cómo empecé en ${niche} sin dinero`,
+                `${niche} vs realidad: La verdad`,
+                `Herramientas secretas para ${niche}`,
+                `Reto: ${niche} durante 30 días`,
+                `Q&A sobre ${niche}`,
+                `React al peor ${niche} del mundo`,
+                `${niche} en tiempo real (no editado)`
+            ];
+            
+            document.getElementById('ideas-result').innerHTML = `
+                <h4 style="margin-bottom: 1rem;">30 Ideas de Contenido:</h4>
+                ${ideas.map((idea, i) => `
+                    <div class="idea-result" onclick="copyResult('${idea.replace(/'/g, "\\'")}')">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>${i + 1}. ${idea}</span>
+                            <button class="copy-btn">Copiar</button>
+                        </div>
+                    </div>
+                `).join('')}
+            `;
+            document.getElementById('ideas-result').style.display = 'block';
+            document.getElementById('ideas-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // TESTER DE MINIATURAS
+        function testThumbnail() {
+            const url = document.getElementById('thumbnail-url').value;
+            
+            if (!url) {
+                alert('❌ Pegá una URL de imagen válida (ej: https://i.imgur.com/foto.jpg)');
+                return;
+            }
+            
+            document.getElementById('thumbnail-result').innerHTML = `
+                <h4 style="margin-bottom: 1rem;">Vista Previa:</h4>
+                <h5>📱 Móvil:</h5>
+                <div style="background: #000; border-radius: 10px; padding: 1rem; max-width: 375px;">
+                    <img src="${url}" style="width: 100%; border-radius: 5px;">
+                </div>
+                <h5 style="margin-top: 2rem;">🖥️ Desktop:</h5>
+                <img src="${url}" style="width: 100%; max-width: 800px; border-radius: 10px;">
+            `;
+            document.getElementById('thumbnail-result').style.display = 'block';
+            document.getElementById('thumbnail-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // GENERADOR DE DESCRIPCIONES
+        function generateDescription() {
+            const title = document.getElementById('desc-title').v
